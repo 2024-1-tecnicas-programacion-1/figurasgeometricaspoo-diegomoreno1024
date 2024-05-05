@@ -10,8 +10,12 @@ public class Rectangulo extends FiguraGeometrica{
         this.lado2=lado2;
     }
     public double obtenerArea(){
+        double area= this.lado1*this.lado2;
+        return area;
     }
     
     public double obtenerPerimetro(){
+        double perimetro= this.lado1*2+this.lado2*2;
+        return perimetro;
     }
 }

@@ -11,8 +11,13 @@ public class Triangulo extends FiguraGeometrica{
     }
     
     public double obtenerArea(){
+        double area= (this.altura*this.base)/2;
+        return area;
     }
     
     public double obtenerPerimetro(){
+         double tercerLado = (2*obtenerArea())/this.base;
+         double perimetro= tercerLado+ this.altura+this.base;
+         return perimetro;
     }
 }

@@ -9,8 +9,12 @@ public class Circulo extends FiguraGeometrica{
     }
         
     public double obtenerArea(){
+        double area = Math.PI * Math.pow(this.radio, 2);
+        return area;
     }
     
     public double obtenerPerimetro(){
+        double perimetro = 2 * Math.PI * this.radio;
+        return perimetro;
     }
 }
