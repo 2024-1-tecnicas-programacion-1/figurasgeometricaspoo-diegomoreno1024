@@ -18,8 +18,8 @@ public class Principal {
                 System.out.println("Ingrese el radio del círculo");
                 double radioIngresao= leer.nextDouble();
                 Circulo circuloCreado= new Circulo(nombreFigura,colorFigura,radioIngresao);
-                System.out.println(circuloCreado.obtenerArea());
-                System.out.println(circuloCreado.obtenerPerimetro());
+                System.out.println("El àrea es: "+circuloCreado.obtenerArea());
+                System.out.println("El perìmetro es: "+circuloCreado.obtenerPerimetro());
             break;
             case "rectangulo":
                 System.out.println("Ingrese el valor del lado 1 del rectángulo");
@@ -27,8 +27,8 @@ public class Principal {
                 System.out.println("Ingrese el valor del lado 2 del rectángulo");
                 double lado2Ingresado= leer.nextDouble();
                 Rectangulo rectanguloCreado= new Rectangulo(nombreFigura, colorFigura, lado1Ingresado, lado2Ingresado);
-                System.out.println(rectanguloCreado.obtenerArea());
-                System.out.println(rectanguloCreado.obtenerPerimetro());
+                System.out.println("El àrea es: "+rectanguloCreado.obtenerArea());
+                System.out.println("El perìmetro es: "+rectanguloCreado.obtenerPerimetro());
             break;
             case "triangulo":
                 System.out.println("Ingrese el valor de la base del tríangulo");
@@ -36,8 +36,17 @@ public class Principal {
                 System.out.println("Ingrese el valor de la altura del tríangulo");
                 double alturaIngresada=leer.nextDouble();
                 Triangulo trianguloCreado= new Triangulo(nombreFigura, colorFigura, baseIngresada, alturaIngresada);
-                System.out.println(trianguloCreado.obtenerArea());
-                System.out.println(trianguloCreado.obtenerPerimetro());
+                System.out.println("El àrea es: "+trianguloCreado.obtenerArea());
+                System.out.println("El perìmetro es: "+trianguloCreado.obtenerPerimetro());
+                break;
+            case "trianguloisosceles":
+                System.out.println("Ingrese el valor de la base del tríangulo");
+                double baseIngresadaIsosceles=leer.nextDouble();
+                System.out.println("Ingrese el valor de la altura del tríangulo");
+                double alturaIngresadaIsosceles=leer.nextDouble();
+                TrianguloIsosceles trianguloIsoscelesCreado= new TrianguloIsosceles(nombreFigura, colorFigura, baseIngresadaIsosceles, alturaIngresadaIsosceles);
+                System.out.println("El àrea es: "+trianguloIsoscelesCreado.obtenerArea());
+                System.out.println("El perìmetro es: "+trianguloIsoscelesCreado.obtenerPerimetro());
         }
     }
 }
